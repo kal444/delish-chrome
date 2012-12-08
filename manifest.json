@@ -1,0 +1,26 @@
+{
+  "name": "Delish Bookmarks",
+  "version": "1.0.0",
+  "description": "A different take on delicious bookmarking, with customized syncing",
+  "icons": { "16": "imgs/delish.16px.png",
+             "48": "imgs/delish.48px.png",
+            "128": "imgs/delish.128px.png" },
+  "browser_action": {
+    "default_icon": "imgs/delish.19px.png",
+    "popup": "popup.html"
+  },
+  "background_page": "background.html",
+  "omnibox": {
+    "keyword": "delish" 
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "bookmarks",
+    "cookies",
+    "tabs",
+    "unlimitedStorage",
+    "*://*.del.icio.us/*",
+    "*://*.delicious.com/*",
+    "*://delicious.com/*"
+  ]
+}
